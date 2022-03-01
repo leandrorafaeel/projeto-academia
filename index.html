@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Academia Boa Forma - Seu espaço de saúde</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Centro Boa Forma, seu espaço de saúde">
+        <meta name="keywords" content="academia, musculação, exercicios, emagrecimento, saúde">
+        <meta name="robots" content="index/follow">
+        <meta name="author" content="Leandro Rafael">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Academia Boa forma">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://leandrorafaeel.github.io/projeto-academia">
+        <meta property="og:image" content="https://leandrorafaeel.github.io/projeto-academia/assets/img/musculacao.jpg">
+        <meta property="og:description" content="O melhor centro de saúde do Brasil">
+
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="Academia Boa forma">
+        <meta itemprop="description" content="O melhor centro de saúde do Brasil">
+        <meta itemprop="image" content="https://leandrorafaeel.github.io/projeto-academia/assets/img/musculacao.jpg">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@academiaboaforma">
+        <meta name="twitter:title" content="Academia boa forma">
+        <meta name="twitter:description" content="O melhor centro de saúde do Brasil">
+        <meta name="twitter:image" content="https://leandrorafaeel.github.io/projeto-academia/assets/img/musculacao.jpg">
+        <meta name="twitter:domain" content="https://leandrorafaeel.github.io/projeto-academia">
+        
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    </head>
+    <body>
+        <!-- Cabecalho -->
+        <header id="cabecalho">
+            <nav class="navbar navbar-expand-lg navbar-light">  
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <!-- Botao Mobile-->
+                    <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#menu-principal" 
+                        aria-controls="menu-principal"
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu Principal-->
+                    <div class="collapse navbar-collapse justify-content-end " id="menu-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" aria-current="page" href="index.html">Pagina Inicial</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#modalidades">Modalidades</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#unidades">Unidades</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#fale-conosco">Fale Conosco</a>
+                            </li>
+                        </ul>
+                        <a class="btn">Matricule-se Já</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Banner Full -->
+            <div class="banner-full">
+                <div class="container">
+                    <h1>O melhor treinamento funcional da região</h1>
+                    <div class="links">
+                        <a href="#planos" class="me-2">Planos</a>
+                        <a class="btn-contato" href="#fale-conosco">Contato</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão descer -->
+            <a class="btn-down" href="#modalidades"><i class="fas fa-chevron-down"></i></a>
+        </header>
+
+        <!-- Principal -->
+        <main id="principal">
+            <!-- Modalidades -->
+            <section id="modalidades" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <header class="col-12 mb-5"> 
+                            <h2 class="titulo">Conheça nossas modalidades</h2>
+                        </header>
+                        <!-- Modal Musculação -->
+                        <div class="modal fade" id="musculacaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Quadro de Horários da Musculação</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col">Segunda</th>
+                                                    <th scope="col">Terça</th>
+                                                    <th scope="col">Quarta</th>
+                                                    <th scope="col">Quinta</th>
+                                                    <th scope="col">Sexta</th>
+                                                    <th scope="col">Sábado</th>
+                                                    <th scope="col">Domingo</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="text-center">
+                                                    <td>05:30 - 22:30</td>
+                                                    <td>05:30 - 22:30</td>
+                                                    <td>05:30 - 22:30</td>
+                                                    <td>05:30 - 22:30</td>
+                                                    <td>05:30 - 22:30</td>
+                                                    <td>08:00 - 12:00</td>
+                                                    <td>--</td>
+                                                </tr>                                                                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Musculação -->
+                        <article class="col-6 col-md-3 mb-4 mb-md-0">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/musculacao.jpg" class="card-img-top" alt="musculacao imagem">
+                                </figure>
+                                
+                                <div class="card-body">
+                                    <div class="card-titulo d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title">Musculação </h4> <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                  
+                                    <hr>
+                                    <p class="card-text lead">
+                                        Pratique Musculação com os melhores equipamentos e com os professores mais gabaritados do mercado
+                                    </p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#musculacaoModal"><i class="fas fa-clock"></i> Ver horários</a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Modal Funcional -->
+                        <div class="modal fade" id="funcionalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Quadro de Horários da Funcional</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                            <thead>
+                                              <tr class="text-center">
+                                                <th scope="col">Segunda</th>
+                                                <th scope="col">Terça</th>
+                                                <th scope="col">Quarta</th>
+                                                <th scope="col">Quinta</th>
+                                                <th scope="col">Sexta</th>
+                                                <th scope="col">Sábado</th>
+                                                <th scope="col">Domingo</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="text-center">
+                                                <td>08:00 -  20:30</td>
+                                                <td>--</td>
+                                                <td>14:00 - 22:00</td>
+                                                <td>08:00 - 22:00</td>
+                                                <td>--</td>
+                                                <td>--</td>
+                                                <td>--</td>
+                                              </tr>                                                                                                    
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Funcional -->
+                        <article class="col-6 col-md-3 mb-4 mb-md-0">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/funcional.jpg" class="card-img-top" alt="funcional imagem">
+                                </figure>
+                                
+                                <div class="card-body">
+                                    <div class="card-titulo d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title">Funcional</h4><i class="fas fa-heartbeat"></i>
+                                    </div>
+                             
+                                    <hr>
+                                    <p class="card-text lead">
+                                        Possuímos equipamentos exclusivos para a prática de Funcional, tenha um aumento na sua qualidade de vida
+                                    </p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#funcionalModal"><i class="fas fa-clock"></i> Horários</a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Modal Natação -->
+                        <div class="modal fade" id="natacaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Quadro de Horários da Natação</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="table-responsive">
+                                             <table class="table">
+                                            <thead>
+                                              <tr class="text-center">
+                                                <th scope="col">Segunda</th>
+                                                <th scope="col">Terça</th>
+                                                <th scope="col">Quarta</th>
+                                                <th scope="col">Quinta</th>
+                                                <th scope="col">Sexta</th>
+                                                <th scope="col">Sábado</th>
+                                                <th scope="col">Domingo</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="text-center">
+                                                <td>07:30 -- 08:20</td>
+                                                <td>--</td>
+                                                <td>18:00 - 18:50</td>
+                                                <td>07:30 - 08:20</td>
+                                                <td>18:00 - 18:50</td>
+                                                <td>--</td>
+                                                <td>--</td>
+                                              </tr>                                                                                                    
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Natação -->
+                        <article class="col-6 col-md-3">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/natacao.jpg" class="card-img-top" alt="natacao imagem">
+                                </figure>
+                               
+                                <div class="card-body">
+                                    <div class="card-titulo d-flex align-items-center justify-content-between">
+                                        <h4 class="card-title">Natação</h4> <i class="fas fa-swimmer"></i>
+                                    </div>
+                                  
+                                    <hr>
+                                    <p class="card-text lead">
+                                        Treine Natação conosco. As nossas academias estão entre as melhores academias de natação do Brasil
+                                    </p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#natacaoModal"><i class="fas fa-clock"></i> Horários</a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Modal Nutrição -->
+                        <div class="modal fade" id="nutricaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Entre em contato para agendar sua consulta com nossa Nutricionista</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Telefone: (85) 3495 - 6689</th>
+                                              </tr>
+                                            </thead>
+                                          
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nutrição -->
+                        <article class="col-6 col-md-3">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/img/nutricao.jpg" class="card-img-top" alt="nutricao imagem">
+                                </figure>
+                        
+                                <div class="card-body">
+                                    <div class="card-titulo d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title">Nutrição</h4> <i class="fas fa-utensils"></i>
+                                    </div>
+                                 
+                                    <hr>
+                                    <p class="card-text lead">
+                                        Agende sua avaliação e receba planos alimentares sob medida para você e tenha orientações exclusivas de um profissiona
+                                    </p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nutricaoModal"><i class="fas fa-phone"></i> Agendar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>    
+            </section>
+
+            <!-- Unidades -->
+            <section id="unidades" class="py-5">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <header class="col-12 mb-5">
+                            <h2 class="titulo">Veja as nossas unidades</h2>
+                        </header>
+
+                        <!-- Unidade 1 -->
+                        <article class="col-md-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/unidade1.jpeg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Matriz</h5>
+                                            <p class="card-text lead">
+                                                <i class="fas fa-map-marker-alt"></i> Rua Vasco da Gama, 956
+                                            </p>
+                                            <p class="lead"> 
+                                                <i class="fas fa-phone"></i> (85) 3495-0064
+                                            </p>
+                                            <hr>    
+                                            <a href="https://www.google.com.br/maps/place/R.+Vasco+da+Gama,+956+-+Montese,+Fortaleza+-+CE,+60420-440/@-3.7637729,-38.5490589,17z/data=!3m1!4b1!4m5!3m4!1s0x7c7493575a38061:0x54e81b47652924e7!8m2!3d-3.7637783!4d-38.5468702" class="text-center"><i class="fas fa-map-pin"></i> Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Unidade 2 -->
+                        <article class="col-md-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/unidade-2.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Filial</h5>
+                                            <p class="card-text lead">
+                                                <i class="fas fa-map-marker-alt"></i> Av Expedicionários, 5593
+                                            </p>
+                                            <p class="lead"> 
+                                                <i class="fas fa-phone"></i> (85) 3495-0064
+                                            </p>
+                                            <hr>
+                                            <a href="https://www.google.com.br/maps/place/R.+Vasco+da+Gama,+956+-+Montese,+Fortaleza+-+CE,+60420-440/@-3.7637729,-38.5490589,17z/data=!3m1!4b1!4m5!3m4!1s0x7c7493575a38061:0x54e81b47652924e7!8m2!3d-3.7637783!4d-38.5468702" class="text-center"><i class="fas fa-map-pin"></i> Google Maps</a>
+                                            <span class="msg">Em breve</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planos -->
+            <section id="planos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Confira nossos planos e <span>benefícios</span></h2>
+                            <p class="lead">
+                                *O preço da mensalidade não inclui taxas de matrícula e manutenção.
+                            </p>
+                            <p class="lead">
+                                Sujeito a alterações sem aviso prévio. Não aceitamos cheques. As Taxas de Manutenção e matrícula aparecerão no seu cartão de crédito somadas e com o nome "Taxa de Adesão".
+                            </p>
+                            <p class="lead">    
+                                Modalidades a partir de <span>R$79,99.</span> Entre em contato para mais informações.
+                            </p>
+                        </div>
+                        <!-- Planos -->
+                        <div class="planos col-md-6 d-flex">
+                            <!-- Plano Master -->
+                            <div class="col-md-6 me-md-4">
+                                <div class="plano-master">
+                                        <div class="plano text-center">
+                                            <h4>Plano Master</h4>
+                                            <h3>R$:79,99</h3>
+                                            <h4>Mensais</h4>
+                                        </div>
+                                        <ul>
+                                            <li>Sem multas ou taxas de cancelamento <i class="fas fa-check"></i></li>
+                                            <hr>
+                                            <li>Sem restrição de horários <i class="fas fa-check"></i></li>
+                                            <hr>
+                                            <li>Direito a até 2 modalidades <i class="fas fa-check"></i></li>
+                                            <hr>
+                                            <li>1 Consulta mensal com Nutricionista <i class="fas fa-check"></i></li>
+                                        </ul>
+                                </div>                                    
+                            </div>
+                            <!-- Plano Gold -->
+                            <div class="col-md-6">
+                                <div class="plano-gold">
+                                    <div class="plano text-center">
+                                        <h4>Plano Gold</h4>
+                                        <h3>R$:120,00</h3>
+                                        <h4>Mensais</h4>
+                                    </div>
+                                    <ul>
+                                        <li>Sem multas ou taxas de cancelamento <i class="fas fa-check"></i></li>
+                                        <hr>
+                                        <li>Sem restrição de horários <i class="fas fa-check"></i></li>
+                                        <hr>
+                                        <li>Direito a todas as modalidades <i class="fas fa-check"></i></li>
+                                        <hr>
+                                        <li>2 Consultas mensal com Nutricionista <i class="fas fa-check"></i></li>
+                                        <hr>
+                                        <li>Treino em todas as Unidades <i class="fas fa-check"></i></li>
+                                        <hr>
+                                        <li>Piscina liberada aos Domingos <i class="fas fa-check"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Depoimentos -->
+            <section id="depoimentos" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <header class="col-12">
+                            <h2 class="titulo">Depoimentos dos nossos alunos</h2>
+                        </header>
+                        <!-- Owl Carousel -->
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep1.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    Recomendei a todos os amigos do escritório onde trabalho, os melhores professores que já tive
+                                </p>
+                                <h5>Alessandra Mota</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep2.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    Lugar com vários equipamentos disponíves para todos os tipos de exercícios que voocê precisa fazer
+                                </p>
+                                <h5>Paulo Brito</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep3.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    A melhor terapia contra o estresse do meu dia a dia são os treinos que faço de Natação, só aula top!
+                                </p>
+                                <h5>Roberto Menezes</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep4.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    Depois que você começa a treinar com esses professores não pensa mais em deisitir de ser fitness kkk 
+                                </p>
+                                <h5>Marta Luna</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep5.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    Meu filho faz natação aí e sempre se diverte com os professores super atenciosos que ele tem
+                                </p>
+                                <h5>Estefani Maria</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="item">
+                                <figure class="figure">
+                                    <img src="assets/img/dep6.jpg" alt="" class="figure-img img-fluid">
+                                </figure>
+                                <p class="lead">
+                                    A academia possui ótimos equipamentos pra quem busca por um treinamento completo
+                                </p>
+                                <h5>Alessandro Braga</h5>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section id="newsletter" class="py-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-6">
+                            <h2>Receba nossas promoções</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="">
+                                <input class="form-control" type="email" id="email" placeholder="Cadastrar e-mail">
+                                <button class="btn button" type="submit">Cadastrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fale Conosco -->
+            <section id="fale-conosco" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <header>
+                            <h2 class="titulo">Fale Conosco</h2>
+                        </header>
+
+                        <div class="col-md-6">
+                            <h3>Mande sua Mensagem</h3>
+                            <form>
+                                <div class="mb-3">
+                                  <label for="inputNome" class="form-label">Nome Completo</label>
+                                  <input type="text" class="form-control" id="inputNome" placeholder="* Digite seu nome" required>
+                                 
+                                </div>
+                                <div class="mb-3">
+                                  <label for="inputEmail" class="form-label">E-mail</label>
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="* Digite seu E-mail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="textarea">Mensagem</label>
+                                    <textarea class="form-control" placeholder="Digite sua mensagem aqui" id="textarea"></textarea>
+                                </div>
+                                <button type="submit">Enviar Mensagem</button>
+                              </form>
+                        </div>
+
+                        <div class="col-md-5 offset-md-1">
+                            <h3>Onde Estamos</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2129463736023!2d-38.549058885240775!3d-3.763778297261791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7493575a38061%3A0x54e81b47652924e7!2sR.%20Vasco%20da%20Gama%2C%20956%20-%20Montese%2C%20Fortaleza%20-%20CE%2C%2060420-440!5e0!3m2!1spt-BR!2sbr!4v1645762139037!5m2!1spt-BR!2sbr"></iframe>
+                            
+                            <ul>
+                                <li class="lead">
+                                    <i class="fas fa-map-marker-alt"></i> Rua Vasco da Gama, 956 - Montese 
+                                </li>
+                                <hr>
+                                <li class="lead">
+                                    <i class="fas fa-envelope"></i> contato@boaforma.com
+                                </li>
+                                <hr>
+                                <li class="lead">
+                                    <i class="fas fa-phone-alt"></i> (85) 3495-0064
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodape -->
+        <footer id="rodape" class="py-2">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-md-6 py-2">
+                        <h4>Sobre nós</h4>
+                       <p class="lead">
+                            Um novo conceito em prevenção, promoção e reabilitação de saúde para quem busca melhora
+                            do condicionamento e emagrecimento, além de ser divertido e desafiador
+                       </p>
+                    </div>
+                    <div class="col-md-4 offset-md-2 py-2">
+                        <h4>Siga nossas redes sociais</h4>
+                        <ul class="redes d-flex">
+                            <li class="me-4"><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li class="me-4"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="me-4"><a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
+                            <li class="me-4"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+               
+                    <div class="copyright text-center">
+                        <p class="lead mb-0">
+                            &copy;<span class="date"></span> Academia Boa Forma
+                        </p>
+                      
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        
+        <!-- Button Subir -->
+        <a href="#cabecalho" class="btn-subir"><i class="fas fa-chevron-up"></i></a>
+
+        <!-- PreLoader-->
+        <div class="preloader">
+          <h2>Carregando...</h2>
+          <div class="spinner"></div>
+        </div>
+
+        <!-- Bootstrap Javascript -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Jquery -->
+        <script src="assets/js/jquery.js"></script>
+        <!-- Owl Carousel-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Main Javascript -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

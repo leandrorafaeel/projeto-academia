@@ -1,0 +1,13 @@
+@mixin background-image($img){
+    background-image: $img;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin responsive(){
+ @media screen and (max-width: 720px){
+    @content;
+ }
+}
